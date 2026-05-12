@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Locas 🧠🌀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-card">
+        <div id="setup-screen">
+            <h1>🧠 Preguntas Locas</h1>
+            <p>Responde rápido antes de que tu cerebro explote.</p>
+            <button class="btn-main" onclick="startGame()">¡EMPEZAR!</button>
+        </div>
+
+        <div id="quiz-screen" class="hidden">
+            <div class="stats">
+                <span>Puntos: <b id="score">0</b></span>
+                <div class="timer-bar"><div id="progress"></div></div>
+            </div>
+            
+            <h2 id="question-text">Aquí va la pregunta...</h2>
+            
+            <div id="options-container" class="options-grid">
+                </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2 id="result-title">¡Fin del juego!</h2>
+            <p id="final-score"></p>
+            <button class="btn-main" onclick="location.reload()">Reintentar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

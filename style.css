@@ -1,0 +1,80 @@
+:root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #e94560;
+    --text: #ffffff;
+    --success: #0fec7d;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-card {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.hidden { display: none; }
+
+.timer-bar {
+    width: 100%;
+    height: 8px;
+    background: #0f3460;
+    border-radius: 4px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+#progress {
+    width: 100%;
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.1s linear;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.btn-main {
+    background: var(--accent);
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.option-btn {
+    background: #0f3460;
+    color: white;
+}
+
+.option-btn:hover { background: #533483; }
+
+.correct { background: var(--success) !important; color: #1a1a2e; }
+.wrong { background: var(--accent) !important; color: white; }
